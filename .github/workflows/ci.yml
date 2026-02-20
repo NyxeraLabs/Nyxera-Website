@@ -73,7 +73,7 @@ jobs:
             fi
           done
 
-      - name: Strict check (main): no console.log in production code
+      - name: "Strict check (main): no console.log in production code"
         if: ${{ env.TARGET_BRANCH == 'main' }}
         run: |
           matches="$(grep -RIn --include='*.ts' --include='*.tsx' --exclude-dir='__tests__' 'console\.log(' app components lib || true)"
