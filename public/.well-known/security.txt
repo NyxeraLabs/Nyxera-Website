@@ -1,0 +1,8 @@
+Contact: mailto:security@nyxera.cloud
+Contact: mailto:founder@nyxera.cloud
+Encryption: https://nyxera.cloud/.well-known/pgp-key.txt
+Encryption: openpgp4fpr:F745F87A812EAC72A87D225C72E2D3134E190EC9
+Policy: https://nyxera.cloud/security-policy
+Canonical: https://nyxera.cloud/.well-known/security.txt
+Preferred-Languages: en, es
+Expires: 2027-02-20T00:00:00.000Z
