@@ -7,6 +7,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '420px',
+        '3xl': '1920px',
+        '4xl': '2560px',
+      },
       colors: {
         'nyxera-bg': '#0A0F2D',
         'nyxera-purple': '#8A2BE2',

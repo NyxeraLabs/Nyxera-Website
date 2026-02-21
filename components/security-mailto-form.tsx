@@ -35,10 +35,12 @@ export function SecurityMailtoForm() {
         autoComplete="off"
       />
       <TextareaField id="steps" label="Steps to reproduce" required rows={5} placeholder="1. Navigate to..." autoComplete="off" />
-      <p className="text-sm text-nyxera-subtext">Optional attachments note: share supporting files through an encrypted channel.</p>
+      <p className="text-xs text-nyxera-subtext sm:text-sm">
+        Optional attachments note: share supporting files through an encrypted channel.
+      </p>
       <button
         type="submit"
-        className="rounded border border-nyxera-electric/60 bg-nyxera-electric/10 px-5 py-3 text-sm font-medium uppercase tracking-[0.12em] text-nyxera-electric transition hover:bg-nyxera-electric/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric"
+        className="w-full rounded border border-nyxera-electric/60 bg-nyxera-electric/10 px-5 py-3 text-center text-xs font-medium uppercase tracking-[0.12em] text-nyxera-electric transition hover:bg-nyxera-electric/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric sm:w-auto sm:text-sm 3xl:text-base"
       >
         Send To security@nyxera.cloud
       </button>

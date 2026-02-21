@@ -64,7 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${orbitron.variable} ${roboto.variable}`}>
       <body className="font-roboto antialiased">
-        <div className="min-h-screen bg-nyxera-bg bg-grid bg-fixed">{children}</div>
+        <div className="min-h-screen bg-nyxera-bg bg-grid bg-scroll md:bg-fixed">{children}</div>
       </body>
     </html>
   );

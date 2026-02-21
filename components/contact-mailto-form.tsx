@@ -26,7 +26,7 @@ export function ContactMailtoForm() {
       <TextareaField id="message" label="Message" required placeholder="How can we help?" autoComplete="off" />
       <button
         type="submit"
-        className="rounded border border-nyxera-electric/60 bg-nyxera-electric/10 px-5 py-3 text-sm font-medium uppercase tracking-[0.12em] text-nyxera-electric transition hover:bg-nyxera-electric/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric"
+        className="w-full rounded border border-nyxera-electric/60 bg-nyxera-electric/10 px-5 py-3 text-center text-xs font-medium uppercase tracking-[0.12em] text-nyxera-electric transition hover:bg-nyxera-electric/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric sm:w-auto sm:text-sm 3xl:text-base"
       >
         Send To founder@nyxera.cloud
       </button>

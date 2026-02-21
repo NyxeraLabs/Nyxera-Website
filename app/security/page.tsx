@@ -17,7 +17,7 @@ export function generateMetadata(): Metadata {
 export default function SecurityPage() {
   return (
     <SiteShell>
-      <div className="mx-auto grid w-full max-w-6xl gap-6 px-6 pb-8 pt-16 sm:pt-20">
+      <div className="page-container grid gap-4 sm:gap-6 3xl:gap-8">
         <SectionCard title="Responsible Disclosure">
           <p>
             Nyxera Labs welcomes coordinated vulnerability disclosure that improves user and platform security.
@@ -30,14 +30,14 @@ export default function SecurityPage() {
         <SectionCard title="How To Report Vulnerabilities">
           <p>
             Send security reports to{' '}
-            <a href="mailto:security@nyxera.cloud" className="text-nyxera-electric hover:text-nyxera-text">
+            <a href="mailto:security@nyxera.cloud" className="break-all text-nyxera-electric hover:text-nyxera-text">
               security@nyxera.cloud
             </a>{' '}
             and include affected asset, severity estimate, impact, and reproducibility details.
           </p>
           <p>
             You can also contact{' '}
-            <a href="mailto:founder@nyxera.cloud" className="text-nyxera-electric hover:text-nyxera-text">
+            <a href="mailto:founder@nyxera.cloud" className="break-all text-nyxera-electric hover:text-nyxera-text">
               founder@nyxera.cloud
             </a>{' '}
             when urgent escalation is required.
@@ -78,7 +78,7 @@ export default function SecurityPage() {
         </SectionCard>
 
         <SectionCard title="Security Contact Form">
-          <p className="text-sm text-nyxera-subtext">
+          <p className="text-xs text-nyxera-subtext sm:text-sm">
             This static form opens your email client and prepares an encrypted-report-ready message to security@nyxera.cloud.
           </p>
           <div className="mt-4">

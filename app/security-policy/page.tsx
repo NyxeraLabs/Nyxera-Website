@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
 export default function SecurityPolicyPage() {
   return (
     <SiteShell>
-      <div className="mx-auto grid w-full max-w-6xl gap-6 px-6 pb-8 pt-16 sm:pt-20">
+      <div className="page-container grid gap-4 sm:gap-6 3xl:gap-8">
         <SectionCard title="Scope">
           <p>
             This policy applies to Nyxera Labs web properties and cloud-hosted services that are explicitly identified as owned and

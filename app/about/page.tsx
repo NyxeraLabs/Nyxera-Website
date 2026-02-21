@@ -15,7 +15,7 @@ export function generateMetadata(): Metadata {
 export default function AboutPage() {
   return (
     <SiteShell>
-      <div className="mx-auto grid w-full max-w-6xl gap-6 px-6 pb-8 pt-16 sm:pt-20">
+      <div className="page-container grid gap-4 sm:gap-6 3xl:gap-8">
         <SectionCard title="Mission">
           <p>
             Build durable software infrastructure that can be trusted under pressure, audited with confidence, and maintained over

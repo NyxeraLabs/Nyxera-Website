@@ -14,18 +14,27 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <header className="border-b border-nyxera-subtext/20 backdrop-blur-sm">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-3">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-3 sm:px-6 lg:max-w-[1800px] lg:flex-row lg:items-center lg:justify-between lg:px-8 3xl:px-12 4xl:max-w-[2200px] 4xl:px-16">
           <Link
             href="/"
-            className="flex items-center gap-3"
+            className="flex items-center gap-3 self-start"
             aria-label="Nyxera Labs Home"
           >
-            <Image src={logoTransp} alt="Nyxera Labs logo" priority className="h-12 w-auto sm:h-14" />
-            <span className="font-orbitron text-base font-bold uppercase tracking-[0.22em] text-nyxera-text">Nyxera Labs</span>
+            <Image src={logoTransp} alt="Nyxera Labs logo" priority className="h-10 w-auto sm:h-12 lg:h-14 3xl:h-16" />
+            <span className="font-orbitron text-sm font-bold uppercase tracking-[0.18em] text-nyxera-text sm:text-base 3xl:text-lg">
+              Nyxera Labs
+            </span>
           </Link>
-          <nav aria-label="Primary" className="flex flex-wrap items-center gap-3 text-sm text-nyxera-subtext">
+          <nav
+            aria-label="Primary"
+            className="grid w-full grid-cols-2 gap-2 text-xs text-nyxera-subtext xs:grid-cols-3 sm:flex sm:flex-wrap sm:justify-center sm:gap-3 sm:text-sm lg:w-auto lg:justify-end 3xl:text-base"
+          >
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="rounded px-2 py-1 hover:text-nyxera-electric focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric">
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded border border-transparent px-2 py-1.5 text-center hover:border-nyxera-subtext/30 hover:text-nyxera-electric focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric"
+              >
                 {item.label}
               </Link>
             ))}

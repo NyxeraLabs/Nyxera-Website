@@ -16,11 +16,11 @@ export function generateMetadata(): Metadata {
 export default function ContactPage() {
   return (
     <SiteShell>
-      <div className="mx-auto grid w-full max-w-6xl gap-6 px-6 pb-8 pt-16 sm:pt-20">
+      <div className="page-container grid gap-4 sm:gap-6 3xl:gap-8">
         <SectionCard title="General Contact">
           <p>
             For all inquiries, email{' '}
-            <a href="mailto:founder@nyxera.cloud" className="text-nyxera-electric hover:text-nyxera-text">
+            <a href="mailto:founder@nyxera.cloud" className="break-all text-nyxera-electric hover:text-nyxera-text">
               founder@nyxera.cloud
             </a>{' '}
             or use the form below.
@@ -28,7 +28,7 @@ export default function ContactPage() {
         </SectionCard>
 
         <SectionCard title="Contact Form">
-          <p className="text-sm text-nyxera-subtext">
+          <p className="text-xs text-nyxera-subtext sm:text-sm">
             This static form opens your email client and prepares a message addressed to founder@nyxera.cloud.
           </p>
           <div className="mt-4">
