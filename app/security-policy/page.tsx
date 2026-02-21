@@ -6,8 +6,8 @@ import { buildMetadata } from '@/lib/metadata';
 
 export function generateMetadata(): Metadata {
   return buildMetadata({
-    title: 'Security Policy',
-    description: 'Nyxera Labs security policy with disclosure process and reporting guidelines.',
+    title: 'Privacy Policy',
+    description: 'Nyxera Labs privacy policy with disclosure process and reporting guidelines.',
     path: '/security-policy',
   });
 }
@@ -16,6 +16,12 @@ export default function SecurityPolicyPage() {
   return (
     <SiteShell>
       <div className="page-container grid gap-4 sm:gap-6 3xl:gap-8">
+        <SectionCard title="Privacy Policy">
+          <p>
+            This page outlines operational privacy and disclosure expectations for Nyxera Labs properties and services.
+          </p>
+        </SectionCard>
+
         <SectionCard title="Scope">
           <p>
             This policy applies to Nyxera Labs web properties and cloud-hosted services that are explicitly identified as owned and

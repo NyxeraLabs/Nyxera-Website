@@ -16,7 +16,7 @@ export function ContactMailtoForm() {
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
     );
 
-    window.location.href = `mailto:founder@nyxera.cloud?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@nyxera.cloud?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -28,7 +28,7 @@ export function ContactMailtoForm() {
         type="submit"
         className="w-full rounded border border-nyxera-electric/60 bg-nyxera-electric/10 px-5 py-3 text-center text-xs font-medium uppercase tracking-[0.12em] text-nyxera-electric transition hover:bg-nyxera-electric/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric sm:w-auto sm:text-sm 3xl:text-base"
       >
-        Send To founder@nyxera.cloud
+        Send To info@nyxera.cloud
       </button>
     </form>
   );

@@ -29,7 +29,7 @@ export default function ContactPage() {
 
         <SectionCard title="Contact Form">
           <p className="text-xs text-nyxera-subtext sm:text-sm">
-            This static form opens your email client and prepares a message addressed to founder@nyxera.cloud.
+            This static form opens your email client and prepares a message addressed to info@nyxera.cloud.
           </p>
           <div className="mt-4">
             <ContactMailtoForm />
