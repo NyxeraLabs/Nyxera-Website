@@ -62,8 +62,8 @@ export default function HomePage() {
             <SectionCard title="Nyxera Nexus">
               <p>The commercial integration layer unifying SpectraStrike and VectorVue outcomes.</p>
               <div className="mt-4 flex flex-wrap gap-3">
-                <a href="https://nyxera-nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
-                <a href="https://docs.nyxera-nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
+                <a href="https://nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
+                <a href="https://docs.nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
               </div>
             </SectionCard>
           </div>
