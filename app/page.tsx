@@ -29,11 +29,11 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0f2d]/95 via-[#0a0f2d]/85 to-[#0a0f2d]/55" />
           <div className="absolute inset-0 flex flex-col justify-center p-5 sm:p-8 lg:p-12 3xl:p-16">
             <h1 className="max-w-5xl font-orbitron text-2xl font-bold uppercase leading-tight text-nyxera-text sm:text-4xl lg:text-5xl 3xl:text-6xl">
-              Operational Adversary Emulation for Measurable Security Assurance
+              Enterprise Security Validation Built on Three Integrated Products
             </h1>
             <p className="mt-4 max-w-4xl text-sm leading-relaxed text-nyxera-subtext sm:mt-6 sm:text-base lg:text-lg 3xl:text-xl">
-              Nyxera Labs validates detection, response, and control effectiveness under realistic adversarial conditions —
-              delivering evidence-grade assurance for executive, board, and compliance stakeholders.
+              Nyxera Labs delivers continuous adversary-path validation through SpectraStrike, VectorVue, and Nyxera Nexus,
+              producing measurable assurance evidence for engineering leadership, security operations, and compliance stakeholders.
             </p>
             <div className="mt-6 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap sm:gap-4">
               <SecondaryLinkButton href="/contact" label="Request Executive Briefing" />
@@ -43,24 +43,24 @@ export default function HomePage() {
         </section>
 
         <section id="products" className="mt-8 sm:mt-10 3xl:mt-12">
-          <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">Product Portfolio</h2>
+          <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">Three Core Products</h2>
           <div className="mt-4 grid gap-4 sm:gap-6 lg:grid-cols-3 3xl:gap-8">
             <SectionCard title="SpectraStrike">
-              <p>Offensive execution fabric with attested command wrappers and signed operator provenance.</p>
+              <p>Execution fabric for controlled offensive operations using attested wrappers, policy-bound controls, and signed provenance.</p>
               <div className="mt-4 flex flex-wrap gap-3">
                 <a href="https://spectrastrike.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
                 <a href="https://docs.spectrastrike.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
               </div>
             </SectionCard>
             <SectionCard title="VectorVue">
-              <p>Telemetry validation, cognitive analytics, and assurance evidence lifecycle management.</p>
+              <p>Telemetry normalization, correlation analytics, and evidence lifecycle management for continuous validation programs.</p>
               <div className="mt-4 flex flex-wrap gap-3">
                 <a href="https://vectorvue.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
                 <a href="https://docs.vectorvue.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
               </div>
             </SectionCard>
             <SectionCard title="Nyxera Nexus">
-              <p>The commercial integration layer unifying SpectraStrike and VectorVue outcomes.</p>
+              <p>Commercial integration layer that unifies execution evidence and validation analytics into one enterprise operating model.</p>
               <div className="mt-4 flex flex-wrap gap-3">
                 <a href="https://nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
                 <a href="https://docs.nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
@@ -69,8 +69,29 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section id="solutions" className="mt-8 sm:mt-10 3xl:mt-12">
+          <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">Solution Stack</h2>
+          <div className="mt-4 grid gap-4 sm:gap-6 lg:grid-cols-3 3xl:gap-8">
+            <SectionCard title="Continuous Red Team Validation">
+              <p>
+                Execute threat-realistic adversary paths with SpectraStrike, measure detections in VectorVue, and operationalize findings through Nexus.
+              </p>
+            </SectionCard>
+            <SectionCard title="Detection Engineering at Scale">
+              <p>
+                Convert execution telemetry into actionable detection improvement loops, coverage scoring, and repeatable quality gates.
+              </p>
+            </SectionCard>
+            <SectionCard title="Evidence-Grade Governance Reporting">
+              <p>
+                Produce auditable evidence streams aligned to NIST, ISO 27001, and SOC 2 requirements with executive-ready reporting.
+              </p>
+            </SectionCard>
+          </div>
+        </section>
+
         <section id="what-we-do" className="mt-8 sm:mt-10 3xl:mt-12">
-          <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">What We Do</h2>
+          <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">Security Outcomes We Deliver</h2>
           <div className="mt-4 grid gap-4 sm:gap-6 lg:grid-cols-3 3xl:gap-8">
             <SectionCard title="1. Adversary Path Validation">
               <p>

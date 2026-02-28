@@ -35,7 +35,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             onClick={() => setMenuOpen(false)}
           >
             <Image src={logoTransp} alt="Nyxera Labs logo" priority className="h-10 w-auto sm:h-12 lg:h-14 3xl:h-16" />
-            <span className="font-orbitron text-sm font-bold uppercase tracking-[0.18em] text-nyxera-text sm:text-base 3xl:text-lg">
+            <span className="font-orbitron text-[11px] font-semibold uppercase tracking-[0.14em] text-nyxera-text sm:text-xs lg:text-sm 3xl:text-base">
               Nyxera Labs
             </span>
           </Link>
