@@ -33,16 +33,6 @@ export function SiteFooter() {
               <li>
                 <a
                   className="hover:text-nyxera-electric hover:underline"
-                  href="https://vectorvue.nyxera.cloud"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  VectorVue
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-nyxera-electric hover:underline"
                   href="https://spectrastrike.nyxera.cloud"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -53,7 +43,17 @@ export function SiteFooter() {
               <li>
                 <a
                   className="hover:text-nyxera-electric hover:underline"
-                  href="https://nyxera-nexus.nyxera.cloud"
+                  href="https://vectorvue.nyxera.cloud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VectorVue
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-nyxera-electric hover:underline"
+                  href="https://nexus.nyxera.cloud"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -132,7 +132,7 @@ export function SiteFooter() {
               <li>
                 <a
                   className="hover:text-nyxera-electric hover:underline"
-                  href="https://docs.nyxera-nexus.nyxera.cloud"
+                  href="https://docs.nexus.nyxera.cloud"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -148,7 +148,7 @@ export function SiteFooter() {
             <Image src={logoTransp} alt="Nyxera Labs logo" className="h-5 w-5 rounded-sm object-cover" />
             Nyxera Labs by Nyxera Labs. All rights reserved © 2026
           </p>
-          <p>Products: SpectraStrike, VectorVue, Nyxera Nexus.</p>
+          <p>Products: SpectraStrike, VectorVue, Nyxera Nexus. Docs: Spectra Docs, VectorVue Docs, Nexus Docs.</p>
         </div>
       </div>
     </footer>
