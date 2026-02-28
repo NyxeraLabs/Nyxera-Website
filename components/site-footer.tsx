@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import Image from 'next/image';
+import logoTransp from '@/assets/images/NyxeraLogo-transp.png';
 
 export function SiteFooter() {
-  const year = new Date().getFullYear();
-
   return (
     <footer className="mt-14 border-t border-nyxera-subtext/20 bg-[#0b0f14] sm:mt-16 lg:mt-20">
       <div className="mx-auto w-full max-w-6xl px-4 py-12 text-sm text-nyxera-subtext sm:px-6 lg:max-w-[1800px] lg:px-8 3xl:px-12 4xl:max-w-[2200px] 4xl:px-16">
@@ -48,6 +48,16 @@ export function SiteFooter() {
                   rel="noopener noreferrer"
                 >
                   SpectraStrike
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-nyxera-electric hover:underline"
+                  href="https://nyxera-nexus.nyxera.cloud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nyxera Nexus
                 </a>
               </li>
               <li>
@@ -99,13 +109,46 @@ export function SiteFooter() {
                   Terms of Service
                 </Link>
               </li>
+              <li>
+                <a
+                  className="hover:text-nyxera-electric hover:underline"
+                  href="https://docs.spectrastrike.nyxera.cloud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  SpectraStrike Docs
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-nyxera-electric hover:underline"
+                  href="https://docs.vectorvue.nyxera.cloud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VectorVue Docs
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-nyxera-electric hover:underline"
+                  href="https://docs.nyxera-nexus.nyxera.cloud"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Nyxera Nexus Docs
+                </a>
+              </li>
             </ul>
           </section>
         </div>
 
         <div className="mt-8 flex flex-col gap-2 border-t border-nyxera-subtext/20 pt-4 text-xs text-nyxera-subtext md:flex-row md:items-center md:justify-between">
-          <p>NyxeraLabs by NyxeraLabs — All Rights Reserved © {year}</p>
-          <p>VectorVue is a product of Nyxera Labs.</p>
+          <p className="flex items-center gap-2">
+            <Image src={logoTransp} alt="Nyxera Labs logo" className="h-5 w-5 rounded-sm object-cover" />
+            Nyxera Labs by Nyxera Labs. All rights reserved © 2026
+          </p>
+          <p>Products: SpectraStrike, VectorVue, Nyxera Nexus.</p>
         </div>
       </div>
     </footer>

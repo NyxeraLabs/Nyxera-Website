@@ -42,6 +42,33 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section id="products" className="mt-8 sm:mt-10 3xl:mt-12">
+          <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">Product Portfolio</h2>
+          <div className="mt-4 grid gap-4 sm:gap-6 lg:grid-cols-3 3xl:gap-8">
+            <SectionCard title="SpectraStrike">
+              <p>Offensive execution fabric with attested command wrappers and signed operator provenance.</p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a href="https://spectrastrike.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
+                <a href="https://docs.spectrastrike.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
+              </div>
+            </SectionCard>
+            <SectionCard title="VectorVue">
+              <p>Telemetry validation, cognitive analytics, and assurance evidence lifecycle management.</p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a href="https://vectorvue.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
+                <a href="https://docs.vectorvue.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
+              </div>
+            </SectionCard>
+            <SectionCard title="Nyxera Nexus">
+              <p>The commercial integration layer unifying SpectraStrike and VectorVue outcomes.</p>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a href="https://nyxera-nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Product</a>
+                <a href="https://docs.nyxera-nexus.nyxera.cloud" className="rounded border border-nyxera-electric/50 px-3 py-2 text-xs uppercase tracking-[0.1em] text-nyxera-electric">Docs</a>
+              </div>
+            </SectionCard>
+          </div>
+        </section>
+
         <section id="what-we-do" className="mt-8 sm:mt-10 3xl:mt-12">
           <h2 className="text-xl font-semibold uppercase tracking-[0.12em] text-nyxera-text sm:text-2xl">What We Do</h2>
           <div className="mt-4 grid gap-4 sm:gap-6 lg:grid-cols-3 3xl:gap-8">
