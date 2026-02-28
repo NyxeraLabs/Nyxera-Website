@@ -12,6 +12,12 @@ const navItems = [
   { href: '/contact', label: 'Contact' },
   { href: '/security', label: 'Security' },
   { href: '/security-policy', label: 'Privacy Policy' },
+  { href: 'https://spectrastrike.nyxera.cloud', label: 'SpectraStrike' },
+  { href: 'https://vectorvue.nyxera.cloud', label: 'VectorVue' },
+  { href: 'https://nyxera-nexus.nyxera.cloud', label: 'Nyxera Nexus' },
+  { href: 'https://docs.spectrastrike.nyxera.cloud', label: 'Spectra Docs' },
+  { href: 'https://docs.vectorvue.nyxera.cloud', label: 'VectorVue Docs' },
+  { href: 'https://docs.nyxera-nexus.nyxera.cloud', label: 'Nexus Docs' },
 ];
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
@@ -47,20 +53,33 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
             aria-label="Primary"
             className={`${menuOpen ? 'grid' : 'hidden'} w-full grid-cols-2 gap-2 text-xs text-nyxera-subtext xs:grid-cols-3 sm:text-sm lg:grid lg:w-auto lg:auto-cols-max lg:grid-flow-col lg:justify-end lg:gap-3 3xl:text-base`}
           >
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMenuOpen(false)}
-                className={`rounded border px-2 py-1.5 text-center transition focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric ${
-                  pathname === item.href
-                    ? 'border-nyxera-electric/50 bg-nyxera-electric/10 text-nyxera-electric'
-                    : 'border-nyxera-subtext/20 text-nyxera-subtext hover:border-nyxera-electric/40 hover:bg-nyxera-electric/10 hover:text-nyxera-text'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const isExternal = item.href.startsWith('http');
+              const className = `rounded border px-2 py-1.5 text-center transition focus:outline-none focus-visible:ring-2 focus-visible:ring-nyxera-electric ${
+                pathname === item.href
+                  ? 'border-nyxera-electric/50 bg-nyxera-electric/10 text-nyxera-electric'
+                  : 'border-nyxera-subtext/20 text-nyxera-subtext hover:border-nyxera-electric/40 hover:bg-nyxera-electric/10 hover:text-nyxera-text'
+              }`;
+              if (isExternal) {
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMenuOpen(false)}
+                    className={className}
+                  >
+                    {item.label}
+                  </a>
+                );
+              }
+              return (
+                <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className={className}>
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
       </header>
