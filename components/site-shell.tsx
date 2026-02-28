@@ -14,10 +14,10 @@ const navItems = [
   { href: '/security-policy', label: 'Privacy Policy' },
   { href: 'https://spectrastrike.nyxera.cloud', label: 'SpectraStrike' },
   { href: 'https://vectorvue.nyxera.cloud', label: 'VectorVue' },
-  { href: 'https://nyxera-nexus.nyxera.cloud', label: 'Nyxera Nexus' },
+  { href: 'https://nexus.nyxera.cloud', label: 'Nyxera Nexus' },
   { href: 'https://docs.spectrastrike.nyxera.cloud', label: 'Spectra Docs' },
   { href: 'https://docs.vectorvue.nyxera.cloud', label: 'VectorVue Docs' },
-  { href: 'https://docs.nyxera-nexus.nyxera.cloud', label: 'Nexus Docs' },
+  { href: 'https://docs.nexus.nyxera.cloud', label: 'Nexus Docs' },
 ];
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
@@ -27,7 +27,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
   return (
     <>
       <header className="border-b border-nyxera-subtext/20 backdrop-blur-sm">
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-3 sm:px-6 lg:max-w-[1800px] lg:flex-row lg:items-center lg:justify-between lg:px-8 3xl:px-12 4xl:max-w-[2200px] 4xl:px-16">
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-3 sm:px-6 lg:max-w-[1800px] lg:flex-row lg:items-start lg:justify-between lg:px-8 3xl:px-12 4xl:max-w-[2200px] 4xl:px-16">
           <Link
             href="/"
             className="flex items-center gap-3 self-start"
@@ -51,7 +51,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <nav
             id="primary-nav"
             aria-label="Primary"
-            className={`${menuOpen ? 'grid' : 'hidden'} w-full grid-cols-2 gap-2 text-xs text-nyxera-subtext xs:grid-cols-3 sm:text-sm lg:grid lg:w-auto lg:auto-cols-max lg:grid-flow-col lg:justify-end lg:gap-3 3xl:text-base`}
+            className={`${menuOpen ? 'grid' : 'hidden'} w-full grid-cols-2 gap-2 text-xs text-nyxera-subtext xs:grid-cols-3 sm:text-sm lg:flex lg:w-auto lg:max-w-[980px] lg:flex-wrap lg:justify-end lg:gap-3 3xl:text-base`}
           >
             {navItems.map((item) => {
               const isExternal = item.href.startsWith('http');
