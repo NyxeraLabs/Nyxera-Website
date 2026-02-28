@@ -1,20 +1,5 @@
 import type { Metadata } from 'next';
-import { Orbitron, Roboto } from 'next/font/google';
 import './globals.css';
-
-const orbitron = Orbitron({
-  variable: '--font-orbitron',
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['700'],
-});
-
-const roboto = Roboto({
-  variable: '--font-roboto',
-  subsets: ['latin'],
-  display: 'swap',
-  weight: ['400', '500', '700'],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nyxera.cloud'),
@@ -62,7 +47,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${orbitron.variable} ${roboto.variable}`}>
+    <html lang="en">
       <body className="font-roboto antialiased">
         <div className="min-h-screen bg-nyxera-bg bg-grid bg-scroll md:bg-fixed">{children}</div>
       </body>
