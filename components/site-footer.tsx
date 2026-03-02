@@ -146,9 +146,9 @@ export function SiteFooter() {
         <div className="mt-8 flex flex-col gap-2 border-t border-nyxera-subtext/20 pt-4 text-xs text-nyxera-subtext md:flex-row md:items-center md:justify-between">
           <p className="flex items-center gap-2">
             <Image src={logoTransp} alt="Nyxera Labs logo" className="h-5 w-5 rounded-sm object-cover" />
-            Nyxera Labs by Nyxera Labs. All rights reserved © 2026
+            Nyxera Labs. Enterprise Security Validation Infrastructure. © 2026 All rights reserved.
           </p>
-          <p>Products: SpectraStrike, VectorVue, Nyxera Nexus. Docs: Spectra Docs, VectorVue Docs, Nexus Docs.</p>
+          <p>Products: SpectraStrike, VectorVue, Nyxera Nexus. Documentation: Spectra Docs, VectorVue Docs, Nexus Docs.</p>
         </div>
       </div>
     </footer>
